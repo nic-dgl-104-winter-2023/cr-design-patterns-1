@@ -1,8 +1,20 @@
 import java.io.File;
 
 public class ViewHolder {
+    
+    String studentName = HTML.studentName;
+    int studentID = HTML.studentName;
+    ArrayList<String> enrolledCourses = HTML.enrolledCourses;
 
-    String reference;
+    public viewHolder(){
+        
+    }
+    
+    
+    
+    
+    
+    /*String reference;
 
     {
         try {
@@ -10,7 +22,7 @@ public class ViewHolder {
             this.reference = htmlFile.toString();
         } catch (Exception e) {
             System.out.println("Something went wrong");
-        }
+        }*/
 
     }
 }
