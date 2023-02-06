@@ -2,18 +2,18 @@ using System;
 
 namespace adapterStructure {
     
-    public static class Adapter {
+    public class Adapter {
 
-            static void ViewHolder(View view) {
+            public ViewHolder(View view) {
                 var vH = new students;
                 //initiates
                 Console.WriteLine({vH});
                 //returns students
             }
-            static void DataBind() {
+            public void DataBind() {
                 
             }
-            static void DataSize() {
+            public DataSize() {
 
             }
         
