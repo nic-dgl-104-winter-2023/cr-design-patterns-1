@@ -4,7 +4,7 @@ namespace adapterStructure {
     
     public class Adapter {
 
-            public ViewHolder(View view) {
+            public ViewHolder(string name, int idNum, string course) {
                 var vH = new students;
                 //initiates
                 Console.WriteLine({vH});
