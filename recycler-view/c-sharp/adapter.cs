@@ -2,12 +2,19 @@ using System;
 
 namespace adapterStructure {
     
+    public class ViewHolder {
+        var name = HTML.student-name;
+        var idNum = HTML.student-idNum;
+        var course = HTML.student-course;
+    }
+
+
     public class Adapter {
 
             public ViewHolder(View view) {
-                var vH = new students;
-                //initiates
-                Console.WriteLine({vH});
+                Console.WriteLine("Student Name: " + {name} + "\n");
+                Console.WriteLine("Student ID: " + {idNum} + "\n");
+                Console.WriteLine("Student Course: " + {course} + "\n");
                 //returns students
             }
             public void DataBind() {
