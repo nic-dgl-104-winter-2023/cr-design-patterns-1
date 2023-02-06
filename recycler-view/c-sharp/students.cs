@@ -1,7 +1,7 @@
 using system;
 
 namespace students {
-    
+    //Model
     public static class Student {
         public string name {get; set;};
         public int idNum {get; set;};
@@ -9,7 +9,7 @@ namespace students {
 
         public student (string name, int idNum, string course)
     }
-
+    //main not necessary here
     static void Main (string[] args) {
         Student stud1 = new Student();
             stud1.name = "Brandon";
@@ -23,7 +23,7 @@ namespace students {
 
 
         Student stud3 = new Student();
-            stud1.name = "Brandon";
+            stud1.name = "Declan";
             stud1.idNum = 01076;
             stud1.course = "Android App Development";
 
