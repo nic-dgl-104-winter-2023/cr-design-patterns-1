@@ -14,7 +14,10 @@ namespace adapterStructure {
                 
             }
             public DataSize() {
-
+                var dS = new DataSize;
+                //creates datasize
+                Console.WriteLine({DataSize});
+                //returns datasize
             }
         
         }
