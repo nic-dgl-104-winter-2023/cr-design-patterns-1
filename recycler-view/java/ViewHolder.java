@@ -2,12 +2,14 @@ import java.io.File;
 
 public class ViewHolder {
     
-    String studentName = HTML.studentName;
-    int studentID = HTML.studentName;
-    ArrayList<String> enrolledCourses = HTML.enrolledCourses;
+    String studentName;
+    int studentID;
+    ArrayList<String> enrolledCourses;
 
     public viewHolder(){
-        
+        this.studentName = HTML.studentName;
+        this.studentID = HTML.studentID;
+        this.enrolledCourses = HTML.enrolledCourses;
     }
     
     
