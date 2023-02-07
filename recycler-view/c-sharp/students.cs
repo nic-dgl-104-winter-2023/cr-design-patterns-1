@@ -17,15 +17,15 @@ namespace students {
             stud1.course = "Android App Development";
 
         Student stud2 = new Student();
-            stud1.name = "Jacob";
-            stud1.idNum = 01098;
-            stud1.course = "Android App Development";
+            stud2.name = "Jacob";
+            stud2.idNum = 01098;
+            stud2.course = "Android App Development";
 
 
         Student stud3 = new Student();
-            stud1.name = "Declan";
-            stud1.idNum = 01076;
-            stud1.course = "Android App Development";
+            stud3.name = "Declan";
+            stud3.idNum = 01076;
+            stud3.course = "Android App Development";
 
 
         Console.WriteLine(stud1.name + " " + stud1.idNum + " " + stud1.course);
