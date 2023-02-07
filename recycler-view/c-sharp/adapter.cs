@@ -2,22 +2,44 @@ using System;
 
 namespace adapterStructure {
     
-    public class Adapter {
+    class ViewHolder {
+        public string name;
+        public int idNum;
+        public string course;
+        
+        public ViewHolder() {
+            name = HTML.student-name;
+            idNum = HTML.student-idNum;
+            course = HTML.student-course;
+        }
 
-            public ViewHolder(View view) {
-                var vH = new students;
-                //initiates
-                Console.WriteLine({vH});
-                //returns students
+    }
+
+
+    public class Adapter {
+            Student student = new Student();
+
+            public ViewHolder getViewHolder() {
+                ViewHolder vh = new viewHolder();
+
+                return vh;
             }
-            public void DataBind() {
+
+
+            public void dataBind() {
+                ViewHolder vh = getViewHolder();
+
+                vh.name = student.name;
+                vh.idNum = student.idNum;
+                vh.course = student.course;
+            }
+
+
+            public dataSize() {
+                dataSize ds = new DataSize();
                 
-            }
-            public DataSize() {
-                var dS = new DataSize;
-                //creates datasize
-                Console.WriteLine({DataSize});
-                //returns datasize
+                return DataSize;
+                
             }
         
         }
