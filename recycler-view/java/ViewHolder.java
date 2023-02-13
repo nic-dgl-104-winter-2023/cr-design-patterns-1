@@ -1,30 +1,40 @@
 import java.io.File;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 public class ViewHolder {
-    
-    String studentName;
-    int studentID;
-    ArrayList<String> enrolledCourses;
 
-    public viewHolder(){
-        this.studentName = HTML.studentName;
-        this.studentID = HTML.studentID;
-        this.enrolledCourses = HTML.enrolledCourses;
-    }
+    File file = new File("./recycler-view/java/view.html");
     
-    
-    
-    
-    
-    /*String reference;
+    Document htmlDocument;
 
-    {
+    Element studentName;
+    Element studentID;
+    Element enrolledCourses;
+
+    public ViewHolder() {
         try {
-            File htmlFile = new File("view.html");
-            this.reference = htmlFile.toString();
-        } catch (Exception e) {
-            System.out.println("Something went wrong");
-        }*/
+            this.htmlDocument = Jsoup.parse(file, "UTF-8", "http://example.com/");
 
+            this.studentName = htmlDocument.select("#studentName").first();
+            this.studentID = htmlDocument.select("#studentID").first();
+            this.enrolledCourses = htmlDocument.select("#enrolledCourses").first();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
+
+    /*
+     * String reference;
+     * 
+     * {
+     * try {
+     * File htmlFile = new File("view.html");
+     * this.reference = htmlFile.toString();
+     * } catch (Exception e) {
+     * System.out.println("Something went wrong");
+     * }
+     */
+
 }
