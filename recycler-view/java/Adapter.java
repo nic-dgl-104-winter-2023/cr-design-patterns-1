@@ -14,10 +14,10 @@ public class Adapter {
         return vh;
     }
 
-    public void onBindViewHolder() {
+    public void onBindViewHolder(int currStudent) {
 
         ViewHolder vh = onCreateViewHolder();
-        Model firstStudent = ds.students[0];
+        Model firstStudent = ds.students[currStudent];
 
         
         vh.studentName.text(firstStudent.getStudentName());
@@ -25,6 +25,8 @@ public class Adapter {
         for (int i = 0; i < firstStudent.getEnrolledCourses().length; i++) {
             vh.enrolledCourses.append("<li>" + firstStudent.getEnrolledCourses()[i] + "</li>");
         }
+
+
 
         BufferedWriter writer = null;
         try{
