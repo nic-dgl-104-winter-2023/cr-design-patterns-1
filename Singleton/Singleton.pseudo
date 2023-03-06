@@ -1,0 +1,12 @@
+CLASS Singleton
+    
+    DECLARE a protected instance
+
+    CONSTRUCTOR Singleton
+
+    FUNCTION to return the protected instance
+        CHECK instance hasn't yet been initialized
+        RETURN instance
+
+END CLASS
+
